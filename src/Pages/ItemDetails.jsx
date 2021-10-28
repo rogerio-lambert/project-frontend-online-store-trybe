@@ -52,7 +52,7 @@ class ItemDetails extends Component {
             src={ cartIcon }
           />
         </Link>
-        <p data-testid="shopping-cart-size">{sumTotalItens}</p>
+        <p data-testid="shopping-cart-size">{`${sumTotalItens}`}</p>
       </main>
     );
   }
@@ -69,6 +69,7 @@ ItemDetails.propTypes = {
     }),
     handle: PropTypes.func.isRequired,
   }).isRequired,
+  sumTotalItens: PropTypes.number.isRequired,
 };
 
 export default ItemDetails;
